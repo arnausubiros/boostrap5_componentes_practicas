@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+
+    <title> Modal-Boostrap 5 </title>
+</head>
+
+<body>
+    <h1 class="text-primary">Modal-Boostrap 5</h1>
+    <hr>
+
+    <div class="container my-5">
+<!------------------------------------------------------------------------------->
+        <button
+            class="btn btn-warning"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+        >
+        Modal 1
+        </button>
+
+        <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class ="modal-dialog">
+                <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class=modal-title"
+                                id="exampleModalLabel">Modal Titulo </h5>
+
+                                <strong class="me-auto">
+                                    <button 
+                                    type="button" 
+                                    class="btn-close" 
+                                    ata-bs-dismiss="modal" 
+                                    aria-label="Close">
+                                    </button>
+                                </strong>                                
+                        </div>
+
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore explicabo perspiciatis, cum soluta est fugiat dolores architecto eligendi nemo hic officiis libero sunt? Iste molestias, eum nam quos tempore enim.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button
+                                class="btn btn-danger"
+                                type="button"
+                                data-bs-dismiss="modal"                                
+                            >
+                            cerrar
+                            </button>
+
+                            <button
+                                class="btn btn-success"
+                                type="button"                                                   
+                                                        
+                            >Enviar
+                            </button>
+                        </div>
+                </div>
+            
+            </div>
+
+        </div>
+
+<!---------------   Modal variaciones - estatic  ---------------------------------------------------------------->
+
+<button 
+        class="btn btn-dark"
+         type="button"
+         data-bs-toggle="modal" 
+         data-bs-target="#exampleModal2">
+    Modal 2 - static 
+</button>
+
+<div class="modal fade"
+     id="exampleModal2" 
+     data-bs-backdrop="static" 
+     data-bs-keyboard="false"  
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel2"
+     aria-hidden="true">
+                    <div class="modal-dialog">
+                         <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class=modal-title" id="exampleModalLabel2">Modal Static Titulo 2 </h5>
+                                    <strong class="me-auto">
+                                    <button 
+                                        type="button"
+                                         class="btn-close" 
+                                         data-bs-dismiss="modal" 
+                                         aria-label="Close">
+                                    </button>
+                                    </strong>
+                                 </div>
+
+                                <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore explicabo perspiciatis, cum soluta
+                                    est fugiat dolores architecto eligendi nemo hic officiis libero sunt? Iste molestias, eum nam quos
+                                    tempore enim.</p>
+                                 </div>
+                                <div class="modal-footer">
+                                     <button 
+                                        class="btn btn-danger" 
+                                        type="button" 
+                                        data-bs-dismiss="modal">
+                                     cerrar
+                                    </button>
+                                     <button 
+                                        class="btn btn-success"
+                                        type="button"
+                                    >Enviar
+                                    </button>
+                                 </div>
+                         </div>
+
+                     </div>
+
+</div>
+  
+<!------------ Modal vertical ------------------------------------------------------------------->
+
+<button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+    Modal 3 - vertical
+</button>
+
+<div class="modal fade" id="exampleModal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class=modal-title" id="exampleModalLabel3">Modal Vertical Titulo 3 </h5>
+                <strong class="me-auto">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </strong>
+            </div>
+
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore explicabo perspiciatis, cum soluta
+                    est fugiat dolores architecto eligendi nemo hic officiis libero sunt? Iste molestias, eum nam quos
+                    tempore enim.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" type="button" data-bs-dismiss="modal">
+                    cerrar
+                </button>
+                <button class="btn btn-success" type="button">Enviar
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!------------  ------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+        <button 
+                class="btn btn-danger"
+                type="button" 
+                data-bs-toggle="modal"
+                 data-bs-target="#exemple_modal4">
+        Modal 4
+         </button>
+
+        <button 
+                class="btn btn-info" 
+                type="button" 
+                data-bs-toggle="modal" 
+                data-bs-target="#exemple_modal5">
+            Modal 5
+        </button>
+
+        <button 
+                class="btn btn-light" 
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exemple_modal6">
+        Modal 6
+        </button>
+        
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+
+    <title>Navbar-Boostrap 5 </title>
+</head>
+
+<body>
+    
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand">Navbar-Boostrap 5 </a>
+
+            <button
+                class="navbar-toggler"
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarID1"
+                aria-controls="navbarID1"
+                aria-expanded="false" 
+                aria-label="Toggle navigation"          
+            >
+                <span class="navbar-toggler-icon">
+
+                </span>
+            </button>
+
+
+
+            <div class="collapse navbar-collapse" id="navbarID1">
+
+                <ul class="navbar-nav">
+                        <li class="nav-item" >
+                            <a href="#" class="nav-link active" aria-current="page">Inicio</a>
+                        </li>
+
+                      <li class="nav-item">
+                            <a href="#"class="nav-link">Menu 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Menu 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Menu 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Menu 4</a>
+                        </li>
+             
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+        </script>
+        
+
+
+
+        <!----
+        Solución Navbar cierre automático
+Hola, Si desean que el menú se cierre al hacer click les presento una solución, al parecer aún bootstrap no corrige esto pero se podría hacer con JS
+
+A cada <li> tendrías que agrega un ID único
+    A cada <li> tendrías que agrega un ID único
+    
+    <li class="nav-item" id="btbInicio">
+        <a href="#inicio" class="nav-link" aria-current="page">
+            Inicio
+        </a>
+    </li>
+    Luego después de los js de bootstrap tendrías que agregar:
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+      </script>
+    
+    <script>
+        //EJ: para el li de inicio
+        const btnInicio = document.getElementById('btbInicio')
+        btnInicio.addEventListener('click', () => {
+          const myCollapse = document.getElementById('navbarSupportedContent')
+          const bsCollapse = new bootstrap.Collapse(myCollapse)
+          bsCollapse.hide()
+          console.log('diste click')
+        })
+      </script>
+    Quizás a futuro agreguen alguna configuración más sencilla. Espero ayudar. Saludo
+
+        -->
+ 
+
+</body>
+
+</html>
