@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-PRrgQVJ8NNHGieOA1grGdCTIt4h21CzJs6SnWH4YMQ6G5F5+IEzOHz67L4SQaF0o" crossorigin="anonymous">
+
+    <title>Popovers-Boostrap 5 </title>
+</head>
+
+<body >
+
+ <div class="container mx-auto p-5">
+
+
+   
+    <h1 class="text-dark">Popovers-Boostrap 5</h1>
+    <hr class="my-4">
+
+    <button
+        class="btn btn-danger"
+        type="button"
+        data-bs-toggle="popover"
+        data-bs-title="Titulo del Popover" 
+        data-bs-content="Contenido dep popover............. ">
+        Click to toggle popover 1
+    </button>
+
+    <hr class="my-4">
+
+
+    <button 
+        class="btn btn-warning" 
+        type="button" 
+        data-bs-toggle="popover" 
+        data-bs-title="Titulo del Popover 2"
+        data-bs-content="body"
+        data-bs-placement="top"
+        data-bs-content="Contenido dep popover 2 ............. ">
+        Click to toggle popover 2 (arriba)
+    </button>
+
+    <hr class="my-4">
+
+    <button class="btn btn-success"
+             type="button" 
+             data-bs-content="body"
+             data-bs-placement="left"
+             data-bs-toggle="popover" data-bs-title="Titulo del Popover 3"
+        data-bs-content="Contenido dep popover 3............. ">
+        Click to toggle popover 3
+    </button>
+
+    <hr class="my-4">
+
+    <button class="btn btn-info" 
+            type="button" 
+             data-bs-content="body"
+            data-bs-placement="bottom"
+            data-bs-toggle="popover" data-bs-title="Titulo del Popover 4"
+        data-bs-content="Contenido dep popover 4............. ">
+        Click to toggle popover 4
+    </button>
+
+    <hr class="my-4">
+
+    <button class="btn btn-dark" 
+            type="button" 
+             data-bs-content="body"
+            data-bs-placement="right"
+            data-bs-toggle="popover" data-bs-title="Titulo del Popover 5"
+        data-bs-content="Contenido dep popover 5............. ">
+        Click to toggle popover 5
+    </button>
+  
+</div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    
+    <script>
+       const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+
+
+</body>
+
+</html>
